@@ -1,0 +1,33 @@
+/* Uncomment to enable TailwindCSS */
+
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+html,
+body {
+  @apply bg-white;
+
+  @media (prefers-color-scheme: dark) {
+    color-scheme: light;
+  }
+
+  @media (prefers-color-scheme: light) {
+    color-scheme: dark;
+  }
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 90vh;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  padding: 10px;
+  justify-content: center;
+  font-family: "Inter", ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
